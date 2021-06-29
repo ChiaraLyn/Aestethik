@@ -1,0 +1,277 @@
+/*----------  background text  ----------*/
+
+#bg-text2-intro {
+  overflow: hidden;
+  color: rgba(224, 144, 41, 0.18);
+  font-size: 60px;
+  position: absolute;
+  z-index: -1;
+  bottom: 5%;
+  right: 50%;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: vertical-lr;
+}
+
+/*----------  Video intro  ----------*/
+
+#video_intro {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -99999;
+  object-fit: cover;
+}
+
+/*----------  Navbar intro  ----------*/
+
+.intro_nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 35%;
+}
+
+.intro_nav a {
+  color: #ffffff;
+  font-family: lighter;
+  font-family: 'Bellota Text';
+  font-size: 1.2em;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.intro_nav a:hover {
+  color: rgb(242, 129, 0);
+  padding-top: 10px;
+  font-weight: lighter;
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+
+.focus-in-contract {
+  -webkit-animation: focus-in-contrac 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+  animation: focus-in-contract 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+}
+
+@-webkit-keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.focus-in-expand-fwd {
+  -webkit-animation: focus-in-expand-fwd 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.6s both;
+  animation: focus-in-expand-fwd 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.6s both;
+}
+
+@-webkit-keyframes focus-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-800px);
+    transform: translateZ(-800px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes focus-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-800px);
+    transform: translateZ(-800px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+/*----------  Intro Title letteranimation.js Typed ----------*/
+
+.intro_title {
+  width: fit-content;
+  padding: 2% 8% 0px 0px;
+  margin-left: auto;
+}
+
+.intro_title p {
+  color: rgba(242, 129, 0);
+  font-size: 10em;
+  font-weight: lighter;
+  font-family: 'Quicksand';
+  transition: all 0.6s linear;
+  -webkit-transition: all 0.6s linear;
+  -moz-transition: all 0.6s linear;
+  -ms-transition: all 0.6s linear;
+  -o-transition: all 0.6s linear;
+}
+
+/*---------- Intro Title ----------*/
+
+.intro_text {
+  padding-top: 10%;
+  padding-bottom: 0px;
+  padding-right: 3%;
+  padding-left: 3%;
+  font-family: 'BelloTa Text';
+}
+
+.intro_text h1 {
+  color: #ffffff;
+  font-size: 3em;
+  transition: all 2s;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -ms-transition: all 2s;
+  -o-transition: all 2s;
+}
+
+.intro_text h2 {
+  color: #ffffff;
+  transition: all 2s;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -ms-transition: all 2s;
+  -o-transition: all 2s;
+}
+
+.intro_text h1:hover {
+  color: rgba(242, 129, 0);
+}
+
+.intro_text h2:hover {
+  color: rgba(242, 129, 0);
+}
+
+/*----------  Intro text  ----------*/
+
+.intro_text p {
+  text-align: left;
+  color: #ffffff;
+  font-size: 1.2em;
+  font-family: 'Raleway';
+  margin-top: 3%;
+}
+
+.scale-in-ver-top {
+  -webkit-animation: scale-in-ver-top 3s ease-in-out 0.5s forwards;
+  animation: scale-in-ver-top 3s ease-in-out 0.5s forwards;
+}
+
+@-webkit-keyframes scale-in-ver-top {
+  0% {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in-ver-top {
+  0% {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+    opacity: 1;
+  }
+}
+
+.text-pop-up-top {
+  -webkit-animation: text-pop-up-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: text-pop-up-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes text-pop-up-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+}
+
+@keyframes text-pop-up-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+}

@@ -1,0 +1,15 @@
+/*---------- Gallery Images ----------*/
+
+.gallery_img1 {
+  height: 70vh;
+  width: 100%;
+  background-image: url('../img/woman1.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 2.8s linear;
+  -webkit-transition: all 2.8s linear;
+  -moz-transition: all 2.8s linear;
+  -ms-transition: all 2.8s linear;
+  -o-transition: all 2.8s linear;
+}

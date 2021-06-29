@@ -1,0 +1,415 @@
+/*----------  Background Text ----------*/
+
+#bg-text {
+  overflow: hidden;
+  color: rgba(59, 57, 57, 0.308);
+  font-size: 200px;
+  position: absolute;
+  z-index: -1;
+  right: 25%;
+}
+
+.focus-in-contract-bck {
+  -webkit-animation: focus-in-contract-bck 6s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+  animation: focus-in-contract-bck 6s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+}
+
+@-webkit-keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+    transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(12px);
+    transform: translateZ(12px);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+    transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(12px);
+    transform: translateZ(12px);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+#bg-text1 {
+  overflow: hidden;
+  color: rgba(219, 129, 12, 0.048);
+  font-size: 200px;
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+}
+
+.cssanimation,
+.cssanimation span {
+  animation-duration: 5s;
+}
+
+.tracking-in-expand-pro {
+  -webkit-animation: tracking-in-expand 8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s backwards;
+  animation: tracking-in-expand 8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s backwards;
+}
+
+@-webkit-keyframes tracking-in-expand-pro {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-in-expand-pro {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#bg-text2 {
+  overflow: hidden;
+  color: rgba(240, 208, 167, 0.04);
+  font-size: 350px;
+  position: absolute;
+  z-index: -1;
+  bottom: 5%;
+  right: 50%;
+}
+
+#bg-text3 {
+  overflow: hidden;
+  color: rgba(240, 208, 167, 0.05);
+  font-size: 40vh;
+  position: absolute;
+  z-index: -1;
+  top: 83%;
+  left: 20%;
+}
+
+/*----------  Project Navbar  ----------*/
+
+.projects_nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10%;
+}
+
+.projects_nav a {
+  color: #ffffff;
+  font-family: lighter;
+  font-family: 'Bellota Text';
+  font-size: 1.2em;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.projects_nav a:hover {
+  color: rgb(242, 129, 0);
+  padding-top: 10px;
+  font-weight: lighter;
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+
+/*----------  First block  ----------*/
+
+.first_block {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.projects_img1 {
+  height: 40vh;
+  width: 100%;
+  background-image: url('../img/woman1.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 2.8s linear;
+  -webkit-transition: all 2.8s linear;
+  -moz-transition: all 2.8s linear;
+  -ms-transition: all 2.8s linear;
+  -o-transition: all 2.8s linear;
+}
+
+.first_block h3 {
+  color: #ffffff;
+  transition: all 1s linear;
+  font-family: "Bellota Text";
+  z-index: 1;
+  margin-left: -10%;
+  align-self: center !important;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -ms-transition: all 1s linear;
+  -o-transition: all 1s linear;
+}
+
+.grow_first_block_h3 {
+  font-size: 80px;
+  font-weight: lighter;
+  color: rgb(242, 129, 0) !important;
+}
+
+.first_block_text {
+  color: #fff;
+  font-size: 1.2em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0px;
+  transition: 1s all;
+  -webkit-transition: 1s all;
+  -moz-transition: 1s all;
+  -ms-transition: 1s all;
+  -o-transition: 1s all;
+  opacity: 0;
+  position: absolute;
+}
+
+.scale-up-ver-center {
+  -webkit-animation: scale-up-ver-center 2s cubic-bezier(0.390, 0.575, 0.565, .000) 0s forwards;
+  animation: scale-up-ver-center 2s cubic-bezier(0.390, 0.575, 0.565, .000) 0s forwards;
+}
+
+@-webkit-keyframes scale-up-ver-center {
+  0% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+}
+
+@keyframes scale-up-ver-center {
+  0% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+}
+
+/*----------  Second block  ----------*/
+
+.second_block {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.second_block h3 {
+  color: #ffffff;
+  transition: all 1s linear;
+  font-family: "Bellota Text";
+  z-index: 1;
+  margin-right: -15%;
+  align-self: center;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -ms-transition: all 1s linear;
+  -o-transition: all 1s linear;
+}
+
+.grow_second_block_h3 {
+  font-size: 80px;
+  font-weight: lighter;
+  color: rgb(242, 129, 0) !important;
+}
+
+.projects_img2 {
+  height: 40vh;
+  width: 100%;
+  background-image: url('../img/woman3.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 2.8s linear;
+  -webkit-transition: all 2.8s linear;
+  -moz-transition: all 2.8s linear;
+  -ms-transition: all 2.8s linear;
+  -o-transition: all 2.8s linear;
+}
+
+.second_block_text {
+  color: #fff;
+  font-size: 1.2em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0px;
+  transition: 1s all;
+  -webkit-transition: 1s all;
+  -moz-transition: 1s all;
+  -ms-transition: 1s all;
+  -o-transition: 1s all;
+  opacity: 0;
+  position: absolute;
+}
+
+/*----------  Third block  ----------*/
+
+.third_block {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.third_block h3 {
+  color: #ffffff;
+  transition: all 1s linear;
+  font-family: "Bellota Text";
+  z-index: 1;
+  margin-left: -10%;
+  align-self: center;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -ms-transition: all 1s linear;
+  -o-transition: all 1s linear;
+}
+
+.grow_third_block_h3 {
+  font-size: 80px;
+  font-weight: lighter;
+  color: rgb(242, 129, 0) !important;
+}
+
+.projects_img3 {
+  height: 40vh;
+  width: 100%;
+  background-image: url('../img/woman5.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 2.8s linear;
+  -webkit-transition: all 2.8s linear;
+  -moz-transition: all 2.8s linear;
+  -ms-transition: all 2.8s linear;
+  -o-transition: all 2.8s linear;
+}
+
+.third_block_text {
+  color: #fff;
+  font-size: 1.2em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0px;
+  transition: 1s all;
+  -webkit-transition: 1s all;
+  -moz-transition: 1s all;
+  -ms-transition: 1s all;
+  -o-transition: 1s all;
+  opacity: 0;
+  position: absolute;
+}
+
+/*----------  Fourth block  ----------*/
+
+.fourth_block {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.fourth_block h3 {
+  color: #ffffff;
+  transition: all 1s linear;
+  font-family: "Bellota Text";
+  z-index: 1;
+  margin-right: -15%;
+  align-self: center;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -ms-transition: all 1s linear;
+  -o-transition: all 1s linear;
+}
+
+.grow_fourth_block_h3 {
+  font-size: 80px;
+  font-weight: lighter;
+  color: rgb(242, 129, 0) !important;
+}
+
+.projects_img4 {
+  height: 40vh;
+  width: 100%;
+  background-image: url('../img/woman7.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 2.8s linear;
+  -webkit-transition: all 2.8s linear;
+  -moz-transition: all 2.8s linear;
+  -ms-transition: all 2.8s linear;
+  -o-transition: all 2.8s linear;
+}
+
+.fourth_block_text {
+  color: #fff;
+  font-size: 1.2em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0px;
+  transition: 1s all;
+  -webkit-transition: 1s all;
+  -moz-transition: 1s all;
+  -ms-transition: 1s all;
+  -o-transition: 1s all;
+  opacity: 0;
+  position: absolute;
+}
+
+/*class added to show p in custom.js*/
+.height_block {
+  height: 300px;
+  opacity: 1;
+}

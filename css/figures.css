@@ -1,0 +1,100 @@
+#bg-text-fig {
+  overflow: hidden;
+  color: rgba(59, 57, 57, 0.12);
+  font-size: 200px;
+  position: absolute;
+  z-index: -1;
+  right: 25%;
+}
+
+#bg-text1-fig {
+  overflow: hidden;
+  color: rgba(121, 85, 72, 0.29);
+  font-size: 200px;
+  position: absolute;
+  z-index: -1;
+  bottom: -25%;
+  right: 0;
+}
+
+#bg-text2-fig {
+  overflow: hidden;
+  color: rgba(224, 144, 41, 0.18);
+  font-size: 350px;
+  position: absolute;
+  z-index: -1;
+  bottom: 5%;
+  right: 50%;
+}
+
+.col_fig_text {
+  margin-top: 20%!important;
+}
+
+.wrapper_text_fig {
+  padding: 6%;
+}
+
+.nav_fig .nav-link:hover {
+  color: #b49404!important;
+  padding-top: 30px;
+  font-weight: lighter;
+  transform: scale(2);
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2);
+}
+
+.address {
+  float: right;
+  padding-right: 25px;
+}
+
+.swiper-slide {
+  height: 400px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.swiper_gallery {
+  width: 100%;
+}
+
+.swiper-container {
+  margin-left: 6%;
+}
+
+.swiper-pagination-bullet {
+  opacity: 0.6;
+  width: 10px;
+  height: 10px;
+}
+
+:root {
+  --swiper-theme-color: #b49404;
+}
+
+/* Sweetalert */
+
+.swal2-popup {
+  border-radius: 0px!important;
+  -webkit-border-radius: 0px!important;
+  -moz-border-radius: 0px!important;
+  -ms-border-radius: 0px!important;
+  -o-border-radius: 0px!important;
+  padding: 2.25em;
+}
+
+.swal2-styled.swal2-confirm {
+  background-color: #115117;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  color: #b49404;
+  outline: none;
+  border: none;
+}

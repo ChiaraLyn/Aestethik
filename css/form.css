@@ -1,0 +1,212 @@
+.wrapper {
+  position: relative;
+  top: 60%;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 0 20px;
+}
+
+.contact-form {
+  display: flex;
+  max-width: 550px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+
+.input:hover {
+  outline: none;
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+
+.input-fields,
+.msg {
+  width: 48%;
+}
+
+.input-fields .input,
+.msg textarea {
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #b49404;
+  padding: 10px;
+  color: #c5ecfd;
+  width: 100%;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus {
+  border-bottom: 1px solid #fff;
+  outline: none;
+}
+
+.privacy {
+  width: 100%;
+  margin-top: 6%;
+}
+
+.privacy span {
+  color: #fff;
+}
+
+input[type=checkbox] {
+  border: 1px solid #b49404;
+  background-color: transparent;
+}
+
+.msg textarea {
+  height: 212px;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #b49404;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #b49404;
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #b49404;
+}
+
+legend {
+  color: #fff;
+}
+
+.btn_form {
+  background: #7a6503;
+  text-align: center;
+  padding: 16px 20px;
+  border: none;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 5px;
+  color: #fff;
+  cursor: not-allowed;
+  text-transform: uppercase;
+  transition: all 1s linear;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -ms-transition: all 1s linear;
+  -o-transition: all 1s linear;
+}
+
+/*Chickky Checkboxes styles*/
+
+.form-check {
+  padding-left: 0px !important;
+  margin-top: 10%;
+}
+
+.chickyboxes input[type="checkbox"] {
+  display: none;
+}
+
+.chickyboxes input[type="checkbox"] + label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  font: 14px/20px 'Segoe UI', Tahoma, Verdana, sans-serif;
+  color: #ddd;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.chickyboxes input[type="checkbox"] + label:last-child {
+  margin-bottom: 0;
+}
+
+.chickyboxes input[type="checkbox"] + label:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #b49404;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: .6;
+  -webkit-transition: all .12s, border-color .08s;
+  transition: all .12s, border-color .08s;
+}
+
+.chickyboxes input[type="checkbox"]:checked + label:before {
+  width: 10px;
+  top: -5px;
+  left: 5px;
+  opacity: 1;
+  border: 2px solid;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: #115117;
+  border-right-color: #115117;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+#errornome,
+#errormail,
+#errormessaggio {
+  display: none;
+  font-size: 12px;
+  color: red;
+  margin-top: -13px;
+  float: right;
+}
+
+#errormessaggio {
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+#errorprivacy {
+  display: none;
+  font-size: 12px;
+  color: red;
+  margin-top: -18px;
+  float: left;
+}
+
+.tastoinviosi {
+  background-color: #075011;
+  color: white;
+  outline: none;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.tastoinviosi:focus,
+.tastoinviosi:hover,
+.tastoinviosi:active {
+  outline: none;
+}
